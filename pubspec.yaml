@@ -30,7 +30,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  shared_preferences: ^2.1.0 # 本地存储
+  dio: ^5.1.1 # 网络请求
+  flutter_picker: ^2.1.0 # 选择器, 用于选择校区和运营商
+  flutter_screenutil: ^5.7.0 # 屏幕适配
+  cached_network_image: ^3.2.1 #缓存网络图片
+  material_design_icons_flutter: ^6.0.7096 #icon
+  url_launcher: ^6.1.10   #进行app外页面访问
+  provider: ^6.0.5 #状态管理，
+  package_info: any   #调取本地的版本信息
+  bot_toast: ^4.0.3   #错误弹窗
+  flutter_share: ^2.0.0 #实现分享功能
+  flutter_switch: ^0.3.2 #switch模块
+  photo_view: ^0.14.0 #允许用户放大查看图片
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
