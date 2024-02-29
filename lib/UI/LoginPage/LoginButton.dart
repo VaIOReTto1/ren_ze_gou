@@ -1,3 +1,5 @@
+import 'package:ren_ze_gou/UI/RecommendPage/RecommendPage.dart';
+
 import '../../config/config.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +14,9 @@ class _LoginButtonState extends State<LoginButton> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        toRecommendPage(context);
+      },
       child: Container(
           height: UIConfig.textFeildHeight,
           width: UIConfig.textFeildWidth,

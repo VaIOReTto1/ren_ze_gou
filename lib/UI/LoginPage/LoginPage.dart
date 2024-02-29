@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ren_ze_gou/config/config.dart';
 
 import 'LoginButton.dart';
 import 'LoginTextField.dart';

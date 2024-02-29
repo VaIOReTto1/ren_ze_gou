@@ -9,6 +9,9 @@ class UIConfig {
   static final double textFeildHeight = ScreenUtil().setWidth(30);
   static final double textFeildWidth = ScreenUtil().setWidth(273);
   static final double checkBoxSize = ScreenUtil().setWidth(7);
+  static final double appBarHeight = ScreenUtil().setWidth(49);
+  static final double searchHeight =
+      ScreenUtil().setWidth(31);
 
   // 字体大小
   static final double fontSizeLoginLogo = ScreenUtil().setSp(36); // 登陆页面标题
@@ -22,7 +25,9 @@ class UIConfig {
   static final double fontSizeMedicinePurchase =
       ScreenUtil().setSp(13); // 药品购买按钮
 
+  //icon大小
   static final double logoSize = ScreenUtil().setWidth(41); //品牌推荐logo大小
+  static final double appBarIconSize = ScreenUtil().setWidth(26);
 
   //间距
   static final double loginRLMainPadding = ScreenUtil().setWidth(51); // 登录页面主内容左右间距
@@ -36,6 +41,11 @@ class UIConfig {
   static final double loginButtonRLPadding = ScreenUtil().setWidth(110);
   static final double loginRLSpace = ScreenUtil().setWidth(43); // 登录页面注册按钮之间间距
 
+  static final double appBarIconRLPadding = ScreenUtil().setWidth(10);
+  static final double searchContentPadding = ScreenUtil().setWidth(2);
+  static final double searchDividerTBPadding = ScreenUtil().setWidth(4);
+
   //圆角
   static final double loginMainRadius = ScreenUtil().setWidth(51);
+  static final double searchRadius = ScreenUtil().setWidth(22);
 }

@@ -43,7 +43,7 @@ dependencies:
   flutter_share: ^2.0.0 #实现分享功能
   flutter_switch: ^0.3.2 #switch模块
   photo_view: ^0.14.0 #允许用户放大查看图片
-  flutter_svg: ^1.1.6  #svg使用
+  flutter_svg: ^0.22.0  #svg使用
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
