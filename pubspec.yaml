@@ -44,6 +44,7 @@ dependencies:
   flutter_switch: ^0.3.2 #switch模块
   photo_view: ^0.14.0 #允许用户放大查看图片
   flutter_svg: ^0.22.0  #svg使用
+  banner_carousel: ^1.2.1 #轮播图
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

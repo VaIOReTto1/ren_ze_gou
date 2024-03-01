@@ -24,7 +24,7 @@ class _RenZeAppBarState extends State<RenZeAppBar> {
             Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
-              size: UIConfig.appBarIconSize,
+              size: UIConfig.appBarIconSize-2,
             ),
             Expanded(
               // 使用Expanded使搜索框占据剩余空间
