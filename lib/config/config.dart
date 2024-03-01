@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class UIConfig {
@@ -9,9 +11,18 @@ class UIConfig {
   static final double textFeildHeight = ScreenUtil().setWidth(30);
   static final double textFeildWidth = ScreenUtil().setWidth(273);
   static final double checkBoxSize = ScreenUtil().setWidth(7);
+
   static final double appBarHeight = ScreenUtil().setWidth(49);
   static final double searchHeight = ScreenUtil().setWidth(31);
   static final double bannerHeight = ScreenUtil().setWidth(142);
+  static final double recommendLogoHeight = ScreenUtil().setWidth(170);
+  static final double recommendTabDividerHeight = ScreenUtil().setWidth(3);
+  static final double recommendTabDividerWidth = ScreenUtil().setWidth(24);
+
+  static final double medicineListHeight = ScreenUtil().setWidth(100);
+  static final double medicineImageWidth= ScreenUtil().setWidth(112);
+  static final double medicinePurchaseButtonHeight= ScreenUtil().setWidth(28);
+  static final double medicinePurchaseButtonWidth= ScreenUtil().setWidth(49);
 
   // 字体大小
   static final double fontSizeLoginLogo = ScreenUtil().setSp(36); // 登陆页面标题
@@ -50,11 +61,20 @@ class UIConfig {
   static final double appBarIconRLPadding = ScreenUtil().setWidth(10);
   static final double searchContentPadding = ScreenUtil().setWidth(2.2);
   static final double searchDividerTBPadding = ScreenUtil().setWidth(4.5);
-
   static final double bannerPadding = ScreenUtil().setWidth(3);
+  static final double recommendLogoPadding = ScreenUtil().setWidth(6);
+  static final double recommendTabRLPadding = ScreenUtil().setWidth(20);
+
+  static final double medicineListPadding = ScreenUtil().setWidth(5);
 
   //圆角
   static final double loginMainRadius = ScreenUtil().setWidth(51);
   static final double searchRadius = ScreenUtil().setWidth(22);
   static final double bannerRadius = ScreenUtil().setWidth(10);
+  static final double recommendLogoRadius = ScreenUtil().setWidth(5);
+  static final double recommendTabRadius = ScreenUtil().setWidth(17);
+
+  //颜色
+  static const Color Orange = Color(0xffFF6839);
+  static const Color Grey = Color(0x80000000);
 }

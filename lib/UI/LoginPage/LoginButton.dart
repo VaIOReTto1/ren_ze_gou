@@ -15,7 +15,7 @@ class _LoginButtonState extends State<LoginButton> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        toRecommendPage(context);
+       toRecommendPage(context);
       },
       child: Container(
           height: UIConfig.textFeildHeight,
