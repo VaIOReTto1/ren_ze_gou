@@ -1,3 +1,4 @@
+import 'package:ren_ze_gou/UI/HomePage.dart';
 import 'package:ren_ze_gou/UI/RecommendPage/RecommendPage.dart';
 
 import '../../config/config.dart';
@@ -15,7 +16,7 @@ class _LoginButtonState extends State<LoginButton> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-       toRecommendPage(context);
+       toHomePage(context);
       },
       child: Container(
           height: UIConfig.textFeildHeight,

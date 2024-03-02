@@ -14,15 +14,22 @@ class UIConfig {
 
   static final double appBarHeight = ScreenUtil().setWidth(49);
   static final double searchHeight = ScreenUtil().setWidth(31);
+  static final double navigationBarHeight = ScreenUtil().setWidth(52);
+
   static final double bannerHeight = ScreenUtil().setWidth(142);
   static final double recommendLogoHeight = ScreenUtil().setWidth(170);
   static final double recommendTabDividerHeight = ScreenUtil().setWidth(3);
   static final double recommendTabDividerWidth = ScreenUtil().setWidth(24);
 
   static final double medicineListHeight = ScreenUtil().setWidth(100);
-  static final double medicineImageWidth= ScreenUtil().setWidth(112);
-  static final double medicinePurchaseButtonHeight= ScreenUtil().setWidth(28);
-  static final double medicinePurchaseButtonWidth= ScreenUtil().setWidth(49);
+  static final double medicineImageWidth = ScreenUtil().setWidth(112);
+  static final double medicinePurchaseButtonHeight = ScreenUtil().setWidth(28);
+  static final double medicinePurchaseButtonWidth = ScreenUtil().setWidth(49);
+
+  static final double classficationMedicineImageHeight =
+      ScreenUtil().setWidth(63.5);
+  static final double classficationMedicineImageWidth =
+      ScreenUtil().setWidth(91.2);
 
   // 字体大小
   static final double fontSizeLoginLogo = ScreenUtil().setSp(36); // 登陆页面标题
@@ -39,6 +46,7 @@ class UIConfig {
   //icon大小
   static final double logoSize = ScreenUtil().setWidth(41); //品牌推荐logo大小
   static final double appBarIconSize = ScreenUtil().setWidth(26);
+
 
   //间距
   static final double loginRLMainPadding =
@@ -77,4 +85,5 @@ class UIConfig {
   //颜色
   static const Color Orange = Color(0xffFF6839);
   static const Color Grey = Color(0x80000000);
+  static const Color selectBlack = Color(0xcc000000);
 }

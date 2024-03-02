@@ -30,27 +30,14 @@ class _RecommendPageState extends State<RecommendPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      // 如果你的页面不需要调整大小来避免底部插入的内容（比如键盘），设置为false
-      resizeToAvoidBottomInset: true,
-      body: Column(
-        children: [
-          RenZeAppBar(),
-          Expanded(
-            child: ListView(
-              controller: _scrollController,
-              padding: EdgeInsets.zero,
-              children: const [
-                RecommendBanner(),
-                RecommendLogo(),
-                RecommendTab(),
-              ],
-            ),
-          ),
-        ],
-      ),
+    return ListView(
+      controller: _scrollController,
+      padding: EdgeInsets.zero,
+      children: const [
+        RecommendBanner(),
+        RecommendLogo(),
+        RecommendTab(),
+      ],
     );
   }
 }
-
