@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:ren_ze_gou/UI/HomePage.dart';
 import 'package:ren_ze_gou/config/config.dart';
 
 class RenZeAppBar extends StatefulWidget {
@@ -10,6 +11,7 @@ class RenZeAppBar extends StatefulWidget {
 }
 
 class _RenZeAppBarState extends State<RenZeAppBar> {
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,10 +23,13 @@ class _RenZeAppBarState extends State<RenZeAppBar> {
         padding: EdgeInsets.symmetric(horizontal: UIConfig.appBarIconRLPadding),
         child: Row(
           children: [
-            Icon(
-              Icons.arrow_back_ios,
-              color: Colors.white,
-              size: UIConfig.appBarIconSize-2,
+            InkWell(
+              onTap: ()=>toHomePage(context),
+              child: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.white,
+                size: UIConfig.appBarIconSize-2,
+              ),
             ),
             Expanded(
               // 使用Expanded使搜索框占据剩余空间

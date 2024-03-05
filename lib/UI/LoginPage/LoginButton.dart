@@ -1,5 +1,4 @@
 import 'package:ren_ze_gou/UI/HomePage.dart';
-import 'package:ren_ze_gou/UI/RecommendPage/RecommendPage.dart';
 
 import '../../config/config.dart';
 import 'package:flutter/material.dart';

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:ren_ze_gou/UI/ClassificationPage/ClassificationPage.dart';
+import 'package:ren_ze_gou/UI/ClassificationPage/MedicineItem.dart';
 import 'package:ren_ze_gou/UI/RecommendPage/RecommendPage.dart';
 import 'package:ren_ze_gou/UI/RenZeAppBar.dart';
 import 'package:ren_ze_gou/config/config.dart';
@@ -28,6 +29,12 @@ class _HomePageState extends State<HomePage> {
     const RecommendPage(),
     const ClassficationPage(),
   ];
+
+  void setCurrentPageIndex(int index) {
+    setState(() {
+      widget.currentPageIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

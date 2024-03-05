@@ -54,7 +54,7 @@ class UIConfig {
 
   //icon大小
   static final double logoSize = ScreenUtil().setWidth(41); //品牌推荐logo大小
-  static final double appBarIconSize = ScreenUtil().setWidth(26);
+  static final double appBarIconSize = ScreenUtil().setWidth(22);
 
   //间距
   static final double loginRLMainPadding =
@@ -93,6 +93,7 @@ class UIConfig {
   static final double recommendLogoRadius = ScreenUtil().setWidth(5);
   static final double recommendTabRadius = ScreenUtil().setWidth(17);
   static final double classificationTypeRadius = ScreenUtil().setWidth(30);
+  static final double medicinePageButtonRadius = ScreenUtil().setWidth(34);
 
   //颜色
   static const Color Orange = Color(0xffFF6839);
@@ -101,4 +102,6 @@ class UIConfig {
   static const Color typeBlack = Color(0xff2a2a2a);
   static const Color typeGrey = Color(0xfff3f3f3);
   static const Color shadowGrey = Color(0x1f000000);
+  static const Color Yellow = Color(0xffFDEA3D);
+  static const Color buttonOrange = Color(0xffEE5424);
 }

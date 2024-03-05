@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:ren_ze_gou/UI/RecommendPage/RecommendBanner.dart';
 import 'package:ren_ze_gou/UI/RecommendPage/RecommendLogo.dart';
 import 'package:ren_ze_gou/UI/RecommendPage/RecommendTab.dart';
-import 'package:ren_ze_gou/UI/RenZeAppBar.dart';
-import 'package:ren_ze_gou/config/config.dart';
 
 toRecommendPage(BuildContext context) {
   Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (context) {

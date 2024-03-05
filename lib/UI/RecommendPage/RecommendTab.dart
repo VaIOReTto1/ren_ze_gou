@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ren_ze_gou/UI/Medicine/MedicineList.dart';
 import 'package:ren_ze_gou/config/config.dart';
+import 'package:ren_ze_gou/model/Medicnce.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 class RecommendTab extends StatefulWidget {
@@ -12,6 +13,15 @@ class RecommendTab extends StatefulWidget {
 
 class _RecommendTabState extends State<RecommendTab> {
   int _selectedList = 1; // 默认选中的目录
+  Medicine medicine = Medicine(
+    medicineName: "复方氨酚烷胺胶囊",
+    medicineCompany: "仁和制药责任有限公司",
+    medicineDate: "2024-9-15",
+    medicineCommentCount: "999+",
+    medicineCommentGood: "98%",
+    medicineImage: "https://s11.ax1x.com/2024/03/01/pF0U0OA.png",
+    medicinePrice: "100.00",
+  );
 
   void _switchCatalog(int catalogIndex) {
     setState(() {
@@ -112,14 +122,8 @@ class _RecommendTabState extends State<RecommendTab> {
             children: List.generate(
           10,
           (index) {
-            return const MedicineList(
-              medicineName: "复方氨酚烷胺胶囊",
-              medicineCompany: "仁和制药责任有限公司",
-              medicineDate: "2024-9-15",
-              medicineCommentCount: "999+",
-              medicineCommentGood: "98%",
-              medicineImage: "https://s11.ax1x.com/2024/03/01/pF0U0OA.png",
-              medicinePrice: "100.00",
+            return MedicineList(
+              medicine: medicine,
             );
           },
         )));

@@ -1,30 +1,31 @@
+import 'package:ren_ze_gou/model/Medicnce.dart';
+
 import '../../config/config.dart';
 import 'package:flutter/material.dart';
 
+import 'MedicinePage.dart';
+
 class MedicineList extends StatefulWidget {
-  final String medicineName;
-  final String medicineCompany;
-  final String medicineDate;
-  final String medicineCommentCount;
-  final String medicineCommentGood;
-  final String medicineImage;
-  final String medicinePrice;
+  final Medicine medicine;
 
   const MedicineList(
-      {super.key,
-      required this.medicineName,
-      required this.medicineCompany,
-      required this.medicineDate,
-      required this.medicineCommentCount,
-      required this.medicineCommentGood,
-      required this.medicineImage,
-      required this.medicinePrice});
+      {super.key, required this.medicine,});
 
   @override
   State<MedicineList> createState() => _MedicineListState();
 }
 
 class _MedicineListState extends State<MedicineList> {
+  Medicine medicine = Medicine(
+    medicineName: "复方氨酚烷胺胶囊",
+    medicineCompany: "仁和制药责任有限公司",
+    medicineDate: "2024-9-15",
+    medicineCommentCount: "999+",
+    medicineCommentGood: "98%",
+    medicineImage: "https://s11.ax1x.com/2024/03/01/pF0U0OA.png",
+    medicinePrice: "100.00",
+  );
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -34,7 +35,7 @@ class _MedicineListState extends State<MedicineList> {
       child: Row(
         children: [
           Image.network(
-            widget.medicineImage,
+            widget.medicine.medicineImage,
             width: UIConfig.medicineImageWidth,
           ),
           SizedBox(
@@ -45,27 +46,27 @@ class _MedicineListState extends State<MedicineList> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                widget.medicineName,
+                widget.medicine.medicineName,
                 style: TextStyle(
                     fontSize: UIConfig.fontSizeMedicineTitle,
                     fontWeight: FontWeight.bold),
               ),
               Text(
-                widget.medicineCompany,
+                widget.medicine.medicineCompany,
                 style: TextStyle(
                     fontSize: UIConfig.fontSizeMedicineSub,
                     color: UIConfig.Grey,
                     fontWeight: FontWeight.bold),
               ),
               Text(
-                "有效期至${widget.medicineDate}",
+                "有效期至${widget.medicine.medicineDate}",
                 style: TextStyle(
                     fontSize: UIConfig.fontSizeMedicineSub,
                     color: UIConfig.Grey,
                     fontWeight: FontWeight.bold),
               ),
               Text(
-                "￥${widget.medicinePrice}",
+                "￥${widget.medicine.medicinePrice}",
                 style: TextStyle(
                     fontSize: UIConfig.fontSizeMedicineTitle,
                     color: const Color(0xffE13F0B),
@@ -77,14 +78,14 @@ class _MedicineListState extends State<MedicineList> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "${widget.medicineCommentCount}条评论",
+                      "${widget.medicine.medicineCommentCount}条评论",
                       style: TextStyle(
                           fontSize: UIConfig.fontSizeMedicineMin,
                           color: UIConfig.Grey,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "${widget.medicineCommentGood}好评",
+                      "${widget.medicine.medicineCommentGood}好评",
                       style: TextStyle(
                           fontSize: UIConfig.fontSizeMedicineMin,
                           color: UIConfig.Grey,
@@ -107,6 +108,7 @@ class _MedicineListState extends State<MedicineList> {
             children: [
               Expanded(child: Container()),
               InkWell(
+                onTap: ()=>toMedicinePage(context, medicine),
                 child: Container(
                   width: UIConfig.medicinePurchaseButtonWidth,
                   height: UIConfig.medicinePurchaseButtonHeight,
