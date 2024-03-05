@@ -26,10 +26,18 @@ class UIConfig {
   static final double medicinePurchaseButtonHeight = ScreenUtil().setWidth(28);
   static final double medicinePurchaseButtonWidth = ScreenUtil().setWidth(49);
 
-  static final double classficationMedicineImageHeight =
+  static final double medicinePageImageHeight = ScreenUtil().setWidth(184);
+  static final double medicinePageBottomHeight = ScreenUtil().setWidth(61);
+
+  static final double classificationMedicineImageHeight =
       ScreenUtil().setWidth(63.5);
-  static final double classficationMedicineImageWidth =
+  static final double classificationMedicineImageWidth =
       ScreenUtil().setWidth(91.2);
+  static final double classificationTypeHeight = ScreenUtil().setWidth(32);
+  static final double classificationTypeWidth = ScreenUtil().setWidth(88);
+
+  static final double cartListHeight = ScreenUtil().setWidth(100); // 购物车列表高度
+  static final double cartListImageHeight = ScreenUtil().setWidth(114.7); // 购物车列表图片高度
 
   // 字体大小
   static final double fontSizeLoginLogo = ScreenUtil().setSp(36); // 登陆页面标题
@@ -42,11 +50,11 @@ class UIConfig {
   static final double fontSizeMedicineMin = ScreenUtil().setSp(7); // 药品评论
   static final double fontSizeMedicinePurchase =
       ScreenUtil().setSp(13); // 药品购买按钮
+  static final double fontSizeMedicineItemButton = ScreenUtil().setWidth(12);
 
   //icon大小
   static final double logoSize = ScreenUtil().setWidth(41); //品牌推荐logo大小
   static final double appBarIconSize = ScreenUtil().setWidth(26);
-
 
   //间距
   static final double loginRLMainPadding =
@@ -74,6 +82,9 @@ class UIConfig {
   static final double recommendTabRLPadding = ScreenUtil().setWidth(20);
 
   static final double medicineListPadding = ScreenUtil().setWidth(5);
+  static final double medicineItemRLPadding = ScreenUtil().setWidth(49);
+
+  static final double medicinePagePadding = ScreenUtil().setWidth(10);
 
   //圆角
   static final double loginMainRadius = ScreenUtil().setWidth(51);
@@ -81,9 +92,13 @@ class UIConfig {
   static final double bannerRadius = ScreenUtil().setWidth(10);
   static final double recommendLogoRadius = ScreenUtil().setWidth(5);
   static final double recommendTabRadius = ScreenUtil().setWidth(17);
+  static final double classificationTypeRadius = ScreenUtil().setWidth(30);
 
   //颜色
   static const Color Orange = Color(0xffFF6839);
   static const Color Grey = Color(0x80000000);
   static const Color selectBlack = Color(0xcc000000);
+  static const Color typeBlack = Color(0xff2a2a2a);
+  static const Color typeGrey = Color(0xfff3f3f3);
+  static const Color shadowGrey = Color(0x1f000000);
 }

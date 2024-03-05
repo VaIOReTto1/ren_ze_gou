@@ -15,7 +15,7 @@ class _ClassficationPageState extends State<ClassficationPage> {
   Widget build(BuildContext context) {
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: UIConfig.classficationMedicineImageWidth*1.4, // 每个项目的最大宽度
+        maxCrossAxisExtent: UIConfig.classificationMedicineImageWidth*1.4, // 每个项目的最大宽度
         crossAxisSpacing: 0, // 水平间距
         mainAxisSpacing: 0, // 垂直间距
         childAspectRatio: 1.32, // 子项的宽高比
